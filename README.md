@@ -8,7 +8,7 @@ cmake ..
 make
 
 负载均衡配置：
-# nginx tcp loadbalance config
+nginx tcp loadbalance config
 stream {
     upstream MyServer{
         server 127.0.0.1:6000 weight=1 max_fails=3 fail_timeout=30s;
